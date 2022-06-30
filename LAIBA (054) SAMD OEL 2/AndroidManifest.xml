@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mad_oel_final">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MAD_OEL_FINAL">
+        <activity
+            android:name=".User_Register"
+            android:exported="false"
+            android:label="@string/title_activity_user_register"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".User_Login"
+            android:exported="false"
+            android:label="@string/title_activity_user_login"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".User_Home_Transaction_History"
+            android:exported="false"
+            android:label="@string/title_activity_user_home_transaction_history"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".User_Home_Transaction"
+            android:exported="false"
+            android:label="@string/title_activity_user_home_transaction"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".User_Home_Deposit"
+            android:exported="false"
+            android:label="@string/title_activity_user_home_deposit"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".User_Home_Delete_Account"
+            android:exported="false"
+            android:label="@string/title_activity_user_home_delete_account"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".User_Home_Change_Name"
+            android:exported="false"
+            android:label="@string/title_activity_user_home_change_name"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".User_Home"
+            android:exported="false"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".Employee_Login"
+            android:exported="false"
+            android:label="@string/title_activity_employee_login"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".Employee_Home_User_List"
+            android:exported="false"
+            android:label="@string/title_activity_employee_home_user_list"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".Employee_Home_Transaction"
+            android:exported="false"
+            android:label="@string/title_activity_employee_home_transaction"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".Employee_Home_ResetPac"
+            android:exported="false"
+            android:label="@string/title_activity_employee_home_reset_pac"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".Employee_Home_Deposit"
+            android:exported="false"
+            android:label="@string/title_activity_employee_home_deposit"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".Employee_Home_Delete"
+            android:exported="false"
+            android:label="@string/title_activity_employee_home_delete"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".Employee_Home"
+            android:exported="false"
+            android:label="@string/title_activity_employee_home"
+            android:theme="@style/Theme.MAD_OEL_FINAL.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

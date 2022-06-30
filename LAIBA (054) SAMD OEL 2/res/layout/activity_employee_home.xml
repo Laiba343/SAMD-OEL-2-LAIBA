@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/main_page_gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/home_sib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="63dp"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="BANKING APPLICATION"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="25dp"/>
+
+
+            <Button
+                android:id="@+id/transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_sib"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="51dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:text="@string/transaction"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/deposit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/resetPAC"
+                android:layout_alignLeft="@+id/transaction"
+                android:layout_alignRight="@+id/resetPAC"
+                android:layout_alignStart="@+id/transaction"
+                android:layout_below="@+id/transaction"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/deposit"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/user_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/deposit"
+                android:layout_alignLeft="@+id/deposit"
+                android:layout_alignRight="@+id/deposit"
+                android:layout_alignStart="@+id/deposit"
+                android:layout_below="@+id/deposit"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/userList"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/resetPAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/transaction"
+                android:layout_alignLeft="@+id/transaction"
+                android:layout_alignRight="@+id/transaction"
+                android:layout_alignStart="@+id/transaction"
+                android:layout_below="@+id/user_list"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/resetPAC"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/deleteAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/resetPAC"
+                android:layout_alignLeft="@+id/user_list"
+                android:layout_alignRight="@+id/resetPAC"
+                android:layout_alignStart="@+id/user_list"
+                android:layout_below="@+id/resetPAC"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/deleteAccount"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/fund_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/deleteAccount"
+                android:layout_alignLeft="@+id/deleteAccount"
+                android:layout_alignRight="@+id/deleteAccount"
+                android:layout_alignStart="@+id/deleteAccount"
+                android:layout_below="@+id/deleteAccount"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="FUND TRANSFER"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/fund_transfer"
+                android:layout_alignLeft="@+id/fund_transfer"
+                android:layout_alignRight="@+id/fund_transfer"
+                android:layout_alignStart="@+id/fund_transfer"
+                android:layout_below="@+id/fund_transfer"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/main_page_buttons"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/logout"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
